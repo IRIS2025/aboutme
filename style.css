@@ -1,0 +1,154 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(211, 195, 195);
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+h2 {
+    color: bisque;
+}
+
+.navbar {
+    background-color: rgb(189, 85, 79);
+    display: flex;
+    margin: 10px 20px 20px 20px;
+    position: sticky;
+    top:5;
+    animation:color 10s;
+}
+
+.navbar ul {
+    background-color: rgb(192, 71, 71);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.listitem {
+    background-color: rgb(192, 44, 44);
+}
+
+label {
+    color: rgb(77, 135, 185)
+}
+
+h1 {
+    color: rgb(255, 228, 196);
+    animation: color 5s;
+}
+
+p {
+    color: bisque;
+}
+
+.navbar li {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    cursor: pointer;
+
+}
+
+.navbar li:hover {
+    transform: translateY(-5px);
+    transition: ease;
+    color: beige;
+}
+
+img:hover {
+    transform: scale(120%);
+    transition: 2s ease;
+}
+
+button {
+    margin-top: 10px;
+    width: 100px;
+    height: 35px;
+    font-size: 25px;
+    background-color: rgb(190, 21, 154);
+    border-radius: 20px;
+    border: solid black 2px;
+    color: rgb(10, 6, 0);
+
+}
+
+form {
+    background-color: rgba(92, 7, 7, 0.274);
+    border: solid 2px rgb(7, 1, 1);
+    width: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hio {
+    background-color: rgba(165, 42, 42, 0.445);
+}
+
+.AboutMe {
+    height: 20pvh;
+   
+}
+
+.AboutMe h1{
+    background-color: rgba(243, 165, 64, 0.068);
+}
+
+details {
+    font-size: 25px;
+    background-color: rgba(204, 19, 50, 0.212);
+    cursor: pointer;
+    font-family: cursive;
+    margin-top: 20px;
+
+
+}
+
+summary {
+    font-size: 40px;
+
+}
+.details1{
+    background-color: rgba(207, 229, 235, 0.281);
+}
+.details2{
+    background-color: rgba(124, 221, 221, 0.527);
+}
+.contactme{
+    height: 30vh;
+}
+@keyframes color{
+    0%{
+       background-color: rgba(250, 235, 215, 0.511);
+       transform: translateY(50px);
+    }
+    100%{
+        background-color: rgba(219, 102, 102, 0.665);
+        transform: translateY(10px);
+    }
+}
+
+    @keyframes bgblur{
+        0% {
+            backdrop-filter: blur(100px);
+        }
+        100%{
+            backdrop-filter:blur(10px);
+        }
+
+    }
